@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"></link>
+
+</head>
+<body>
+    <h1 class="h1">EDIT PAGE</h1>
+    <form class="edit-form" method="post">
+        <div class="form-group">
+            <label class="label">Họ và tên: </label>
+            <input class="input" name="name"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Số điện thoại: </label>
+            <input class="input" name="number"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Loại xe: </label>
+            <input class="input" name="vehicle_type"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Biển số xe: </label>
+            <input class="input" name="vehicle_number"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Công ty: </label>
+            <input class="input" name="company_name"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Địa chỉ: </label>
+            <input class="input" name="address"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Bộ phận cần gặp: </label>
+            <input class="input" name="department"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Người cần gặp: </label>
+            <input class="input" name="who"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Mục đích: </label>
+            <input class="input" name="target"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Hướng dẫn an toàn: </label>
+            <input class="input" type="checkbox" name="instructions"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Mã thẻ khách: </label>
+            <input class="input" name="id_card"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Giờ vào: </label>
+            <input class="input" type="datetime-local" name="time_in" value="{{current_time}}"></input><br>
+        </div>
+
+        <div class="form-group">
+            <label class="label">Giờ ra: </label>
+            <input class="input" type="datetime-local" name="time_out"></input><br>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Sumbit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
